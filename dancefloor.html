@@ -19,6 +19,7 @@
         window.dancers = [];
 
         $(".addDancerButton").on("click", function(event){
+          event.preventDefault();
           /* This function sets up the click handlers for the create-dancer
            * buttons on index.html. You should not need to alter it.
            * As long as the "data-dancer-maker-function-name" attribute of a
@@ -43,7 +44,8 @@
             Math.random() * 1000
           );
 
-          $('body').append(dancer.$node);
+          // $('body').append(dancer.$node);
+          // window.dancers.push(dancer)
         });
       });
     </script>
